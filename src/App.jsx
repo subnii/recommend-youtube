@@ -1,5 +1,5 @@
 import React from "react";
-import Contents from "./components/layout/Contents";
+import { Outlet } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Sidebar from "./components/layout/Sidebar";
 
@@ -9,7 +9,7 @@ function App() {
       <Header></Header>
       <div className="flex">
         <Sidebar></Sidebar>
-        <Contents></Contents>
+        <Outlet />
       </div>
     </>
   );
