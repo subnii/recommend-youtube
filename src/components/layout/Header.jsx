@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="w-full flex p-3 text-xl border-b border-zinc-600">
+    <header className="flex-none w-full flex p-3 text-xl border-b border-zinc-600">
       <Link to="/" className="w-full flex items-center">
         <AiOutlineMenu className="text-2xl text-brand mr-4" />
         <BsYoutube className="text-2xl text-brand" />
