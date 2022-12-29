@@ -1,313 +1,313 @@
 {
   "kind": "youtube#videoCategoryListResponse",
-  "etag": "fIIv2-q7-AkaOeJf0LPrlnu-0As",
+  "etag": "wiISN0wuAFKfWlYe9SoTlvD2fV0",
   "items": [
     {
       "kind": "youtube#videoCategory",
-      "etag": "grPOPYEUUZN3ltuDUGEWlrTR90U",
+      "etag": "qlv8uOCGI38ZKFxPPdC1oHiPj5g",
       "id": "1",
       "snippet": {
-        "title": "Film & Animation",
+        "title": "영화/애니메이션",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "Q0xgUf8BFM8rW3W0R9wNq809xyA",
+      "etag": "usy1wrFHZr2SY4ntwc-kGLZmLls",
       "id": "2",
       "snippet": {
-        "title": "Autos & Vehicles",
+        "title": "자동차",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "qnpwjh5QlWM5hrnZCvHisquztC4",
+      "etag": "cpwduYUMd1I9JzDRI4qeAb60j3Q",
       "id": "10",
       "snippet": {
-        "title": "Music",
+        "title": "음악",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "HyFIixS5BZaoBdkQdLzPdoXWipg",
+      "etag": "IqCB51gUUfoCWV2prb64vnGGqOI",
       "id": "15",
       "snippet": {
-        "title": "Pets & Animals",
+        "title": "반려동물/동물",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "PNU8SwXhjsF90fmkilVohofOi4I",
+      "etag": "4naHDC8zLbKM0Ju1lrxlKU_552c",
       "id": "17",
       "snippet": {
-        "title": "Sports",
+        "title": "스포츠",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "5kFljz9YJ4lEgSfVwHWi5kTAwAs",
+      "etag": "_vv39Yy6iDRaRV-swEE4aJqPIfA",
       "id": "18",
       "snippet": {
-        "title": "Short Movies",
+        "title": "단편 영화",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "ANnLQyzEA_9m3bMyJXMhKTCOiyg",
+      "etag": "m07RpjyjC4--QZoFrqg1Jrm_0HI",
       "id": "19",
       "snippet": {
-        "title": "Travel & Events",
+        "title": "여행/이벤트",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "0Hh6gbZ9zWjnV3sfdZjKB5LQr6E",
+      "etag": "sHpGlMwEwN-uO5D0R3u6sL-KTnA",
       "id": "20",
       "snippet": {
-        "title": "Gaming",
+        "title": "게임",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "q8Cp4pUfCD8Fuh8VJ_yl5cBCVNw",
+      "etag": "YT5M4xDYhzyt6r0Tb0DO5CqehuA",
       "id": "21",
       "snippet": {
-        "title": "Videoblogging",
+        "title": "동영상 블로그",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "cHDaaqPDZsJT1FPr1-MwtyIhR28",
+      "etag": "zPQny_LGT3pgp_Xw7D3CWQbyjPQ",
       "id": "22",
       "snippet": {
-        "title": "People & Blogs",
+        "title": "인물/블로그",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "3Uz364xBbKY50a2s0XQlv-gXJds",
+      "etag": "JwaSYGg1rHDIWK2zhOfsONB3ogw",
       "id": "23",
       "snippet": {
-        "title": "Comedy",
+        "title": "코미디",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "0srcLUqQzO7-NGLF7QnhdVzJQmY",
+      "etag": "ma9ExnEMQKXuCJAufVkbLIjn6zk",
       "id": "24",
       "snippet": {
-        "title": "Entertainment",
+        "title": "엔터테인먼트",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "bQlQMjmYX7DyFkX4w3kT0osJyIc",
+      "etag": "LgkuqUodUgouqsue-JO9BDdfJrg",
       "id": "25",
       "snippet": {
-        "title": "News & Politics",
+        "title": "뉴스/정치",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "Y06N41HP_WlZmeREZvkGF0HW5pg",
+      "etag": "GsWn--eAw5d5XILWgOUCFPCI72E",
       "id": "26",
       "snippet": {
-        "title": "Howto & Style",
+        "title": "노하우/스타일",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "yBaNkLx4sX9NcDmFgAmxQcV4Y30",
+      "etag": "MsWfOuywwmAbR5XsFQAhSUJISY0",
       "id": "27",
       "snippet": {
-        "title": "Education",
+        "title": "교육",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "Mxy3A-SkmnR7MhJDZRS4DuAIbQA",
+      "etag": "nrE93_0sPxJ4Ghi4X5BKBAo_nV4",
       "id": "28",
       "snippet": {
-        "title": "Science & Technology",
+        "title": "과학기술",
         "assignable": true,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "4pIHL_AdN2kO7btAGAP1TvPucNk",
+      "etag": "5Jq1UN7sIlFcXe4dbRMTVbZsxp0",
       "id": "30",
       "snippet": {
-        "title": "Movies",
+        "title": "영화",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "Iqol1myDwh2AuOnxjtn2AfYwJTU",
+      "etag": "6bqw5jHFZqDl7PiFGKjAHWgipkg",
       "id": "31",
       "snippet": {
-        "title": "Anime/Animation",
+        "title": "애니메/애니메이션",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "tzhBKCBcYWZLPai5INY4id91ss8",
+      "etag": "iVqfzc-E4PQ-YPzbF90BIEEUlZw",
       "id": "32",
       "snippet": {
-        "title": "Action/Adventure",
+        "title": "액션/모험",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "ii8nBGYpKyl6FyzP3cmBCevdrbs",
+      "etag": "GWnZh6O1Qv7vwnd34Uj97_DT5S0",
       "id": "33",
       "snippet": {
-        "title": "Classics",
+        "title": "고전",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "Y0u9UAQCCGp60G11Arac5Mp46z4",
+      "etag": "3VtqQrgjoSnGtrmcgNDNj6nNWkQ",
       "id": "34",
       "snippet": {
-        "title": "Comedy",
+        "title": "코미디",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "_YDnyT205AMuX8etu8loOiQjbD4",
+      "etag": "enKQG59LRlkHwDwPQ1W2mASjeFE",
       "id": "35",
       "snippet": {
-        "title": "Documentary",
+        "title": "다큐멘터리",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "eAl2b-uqIGRDgnlMa0EsGZjXmWg",
+      "etag": "jr7V1R2f4_EYcYMtZUOXg3-tFRc",
       "id": "36",
       "snippet": {
-        "title": "Drama",
+        "title": "드라마",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "HDAW2HFOt3SqeDI00X-eL7OELfY",
+      "etag": "KtcR14K0sJ72CMasVWWVeCrrJaQ",
       "id": "37",
       "snippet": {
-        "title": "Family",
+        "title": "가족",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "QHiWh3niw5hjDrim85M8IGF45eE",
+      "etag": "UBRc-lifziMX9QmfzdsvdeIMnJk",
       "id": "38",
       "snippet": {
-        "title": "Foreign",
+        "title": "외국",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "ztKcSS7GpH9uEyZk9nQCdNujvGg",
+      "etag": "oha4SNB7xeEg_Qdx_-y_301YITA",
       "id": "39",
       "snippet": {
-        "title": "Horror",
+        "title": "공포",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "Ids1sm8QFeSo_cDlpcUNrnEBYWA",
+      "etag": "8S34MWksMi4vcC2xYTBBYEsmnEk",
       "id": "40",
       "snippet": {
-        "title": "Sci-Fi/Fantasy",
+        "title": "SF/판타지",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "qhfgS7MzzZHIy_UZ1dlawl1GbnY",
+      "etag": "EQfRRnVNYG2F6BOsir5t8qT8ALI",
       "id": "41",
       "snippet": {
-        "title": "Thriller",
+        "title": "스릴러",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "TxVSfGoUyT7CJ7h7ebjg4vhIt6g",
+      "etag": "mSgAXHd-YL9mFq7MzLOoeyDRsUc",
       "id": "42",
       "snippet": {
-        "title": "Shorts",
+        "title": "단편",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "o9w6eNqzjHPnNbKDujnQd8pklXM",
+      "etag": "c7-D4YrYyTvd-LB_qDWWDSDSrys",
       "id": "43",
       "snippet": {
-        "title": "Shows",
+        "title": "프로그램",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
     },
     {
       "kind": "youtube#videoCategory",
-      "etag": "mLdyKd0VgXKDI6GevTLBAcvRlIU",
+      "etag": "rk_KZ00hDhe55DetJA26y3dH98w",
       "id": "44",
       "snippet": {
-        "title": "Trailers",
+        "title": "예고편",
         "assignable": false,
         "channelId": "UCBR8-60-B28hp2BmDPdntcQ"
       }
