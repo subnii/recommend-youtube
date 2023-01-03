@@ -10,7 +10,12 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div className="flex-1 flex h-full">
+      <div
+        className="flex-1 flex"
+        style={{
+          height: "calc(100% - 61px)",
+        }}
+      >
         <QueryClientProvider client={queryClient}>
           <Sidebar />
           <Outlet />
