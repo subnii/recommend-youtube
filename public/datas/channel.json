@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "TK69VPyXHlfSCL3tbfrt9kHQrI0",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "4Bbhqj1Yp0XMGNWQ4IaWyrdZsBM",
+      "id": "UCDNvRZRgvkBTUkQzFoT_8rA",
+      "snippet": {
+        "title": "뜬뜬 DdeunDdeun",
+        "description": "\n좋은 사람, 좋은 이야기, 좋은 웃음\n우리 '뜬뜬'한 사이 돼봐요💕 \n\n🤓유선배 복지 콘텐츠🗣토크찌개맛집🥘\n🐓핑계고🐓는 불시에 찾아옵니다! \n🙏🏻 plz 구독☝알림설정🔔 plz 🙏🏻\n\n뭐든지 문의할 땐, ddeunddeun@antenna.co.kr\n인스타 놀러올 땐, @ddeun._.ddeun\n",
+        "customUrl": "@ddeunddeun",
+        "publishedAt": "2022-10-04T07:24:23.973864Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/aOgjye3sMIxNl2SW2wAQZpZWUXzZ5Rg0rNITacRQKVfXvF9cnPWb77G3_gH5s2Zyw241BXWYWg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/aOgjye3sMIxNl2SW2wAQZpZWUXzZ5Rg0rNITacRQKVfXvF9cnPWb77G3_gH5s2Zyw241BXWYWg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/aOgjye3sMIxNl2SW2wAQZpZWUXzZ5Rg0rNITacRQKVfXvF9cnPWb77G3_gH5s2Zyw241BXWYWg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "뜬뜬 DdeunDdeun",
+          "description": "\n좋은 사람, 좋은 이야기, 좋은 웃음\n우리 '뜬뜬'한 사이 돼봐요💕 \n\n🤓유선배 복지 콘텐츠🗣토크찌개맛집🥘\n🐓핑계고🐓는 불시에 찾아옵니다! \n🙏🏻 plz 구독☝알림설정🔔 plz 🙏🏻\n\n뭐든지 문의할 땐, ddeunddeun@antenna.co.kr\n인스타 놀러올 땐, @ddeun._.ddeun\n"
+        },
+        "country": "KR"
+      },
+      "statistics": {
+        "viewCount": "17808351",
+        "subscriberCount": "433000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "32"
+      }
+    }
+  ]
+}
