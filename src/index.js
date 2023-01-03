@@ -4,9 +4,10 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
+import Main from "./pages/Main";
 import Search from "./pages/Search";
 import NotFound from "./pages/NotFound";
+import Detail from "./pages/Detail";
 
 const router = createBrowserRouter([
   {
@@ -14,9 +15,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <NotFound />,
     children: [
-      { index: true, element: <Home /> },
+      { index: true, element: <Main /> },
       { path: "search", element: <Search /> },
       { path: "search/:keyword", element: <Search /> },
+      { path: "detail/:videoId", element: <Detail /> },
     ],
   },
 ]);

@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 // import { useParams } from "react-router-dom";
-import { fakeSearch, searchYoutube } from "../api/youtubeApi";
+import { fakeHotVideo } from "../api/youtubeApi";
 import Card from "../components/Card";
 
-function Home() {
+function Main() {
   // const { keyword } = useParams();
   const {
     isLoading,
@@ -13,14 +13,13 @@ function Home() {
   } = useQuery(
     ["videoList"],
     () => {
-      console.log(fakeSearch());
-      return fakeSearch();
+      return fakeHotVideo();
     },
     { staleTime: 1000 * 60 * 1 },
   );
 
   return (
-    <div className="flex-1 p-4 overflow-y-auto">
+    <div className="flex-1 w-full h-full p-4 overflow-y-auto border-zinc-600 scrollbar-thin scrollbar-thumb-zinc-500 scrollbar-thumb-rounded scrollbar-track-zinc-900">
       {isLoading && <p>로딩중....</p>}
       {error && <p>문제가 발생했습니다.</p>}
       {videoList && (
@@ -37,4 +36,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Main;
