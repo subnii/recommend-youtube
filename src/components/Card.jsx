@@ -16,7 +16,7 @@ function Card({ video, type }) {
   };
 
   return (
-    <li className={type === "list" ? "flex gap-1 ml-2 mb-2" : ""} onClick={clickHandler}>
+    <li className={type === "list" ? "flex gap-1 mb-2" : ""} onClick={clickHandler}>
       <img
         className={type === "list" ? "w-60 mr-2 rounded-md" : "w-full rounded-xl"}
         src={thumbnails.medium.url}

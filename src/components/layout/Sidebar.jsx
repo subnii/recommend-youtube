@@ -16,11 +16,13 @@ function Sidebar() {
   );
 
   return (
-    <aside className="flex-none w-64 border-r-1">
+    <aside className="flex-none w-64 h-full overflow-y-auto border-zinc-600 scrollbar-thin scrollbar-thumb-zinc-500 scrollbar-thumb-rounded scrollbar-track-zinc-900">
       {categoryList && (
-        <ul className="text-lg p-2">
+        <ul className="text-md p-3">
           {categoryList.map((category) => (
-            <li key={category.id}>{category.snippet.title}</li>
+            <li key={category.id} className="p-2">
+              {category.snippet.title}
+            </li>
           ))}
         </ul>
       )}
