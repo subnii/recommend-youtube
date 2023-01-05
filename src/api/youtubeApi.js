@@ -1,18 +1,31 @@
 import axios from "axios";
 import { Http } from "./core";
 
-export const getHotVideo = () => {
-  return Http.get("/videos?part=statistics&chart=mostPopular&regionCode=KR")
+export const getVideo = (param) => {
+  const params = {
+    part: "snippet,statistics",
+    chart: "mostPopular",
+    regionCode: "KR",
+    maxResults: 25,
+    ...param,
+  };
+
+  return Http.get("/videos", { params })
     .then((response) => {
-      return response.data.items.map((item) => ({ ...item, id: item.id.videoId }));
+      return response.data.items;
     })
     .catch((error) => {
       console.log(error);
     });
 };
 
-export const searchYoutube = () => {
-  return Http.get("/search?maxResults=25")
+export const searchVideo = (param) => {
+  const params = {
+    maxResults: 25,
+    ...param,
+  };
+
+  return Http.get("/search", { params })
     .then((response) => {
       return response.data.items.map((item) => ({ ...item, id: item.id.videoId }));
     })
@@ -22,8 +35,25 @@ export const searchYoutube = () => {
 };
 
 export const getCategory = () => {
-  return Http.get("/videoCategories?regionCode=KR&hl=ko_KR")
+  const params = {
+    regionCode: "KR",
+    hl: "ko_KR",
+  };
+
+  return Http.get("/videoCategories", { params })
     .then((response) => response.data.items)
+    .catch((error) => {
+      console.log(error);
+    });
+};
+
+export const getChannels = (id) => {
+  const params = {
+    id,
+    part: "snippet,statistics",
+  };
+  return Http.get("/channels", { params })
+    .then((response) => response.data.items[0])
     .catch((error) => {
       console.log(error);
     });
