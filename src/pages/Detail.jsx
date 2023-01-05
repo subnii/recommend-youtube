@@ -1,12 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { fakeChannel, fakeConnect } from "../api/youtubeApi";
+import { getChannels, searchVideo } from "../api/youtubeApi";
 import Card from "../components/Card";
 import { getFixCount } from "../util/number";
 
 function ChannelInfo({ id, name }) {
-  const { data: channelInfo } = useQuery(["channel", id], () => fakeChannel(), { staleTime: 1000 * 60 * 5 });
+  const { data: channelInfo } = useQuery(["channel", id], () => getChannels(id), { staleTime: 1000 * 60 * 5 });
   return (
     <div className="flex my-2 mb-5 items-center">
       {channelInfo && (
@@ -23,12 +23,11 @@ function ChannelInfo({ id, name }) {
 }
 
 function RelatedVideos({ id }) {
-  //searchVideo({relatedToVideoId: id, type: "video"})
   const {
     isLoading,
     error,
     data: videos,
-  } = useQuery(["related", id], () => fakeConnect(), {
+  } = useQuery(["related", id], () => searchVideo({ relatedToVideoId: id, type: "video" }), {
     staleTime: 1000 * 60 * 5,
   });
   return (
@@ -52,7 +51,6 @@ function Detail() {
   } = useLocation();
 
   const { title, channelId, channelTitle, description } = video.snippet;
-  const { viewCount } = video.statistics;
 
   return (
     <div className="flex-1 w-full h-full p-4 overflow-y-auto border-zinc-600 scrollbar-thin scrollbar-thumb-zinc-500 scrollbar-thumb-rounded scrollbar-track-zinc-900">
@@ -72,7 +70,9 @@ function Detail() {
             <ChannelInfo id={channelId} name={channelTitle} />
 
             <div className="bg-white/10 p-3 text-sm rounded-lg text-[#f1f1f1]">
-              <p className="mb-2">조회수 {Number(viewCount).toLocaleString()}회</p>
+              {video.statistics && (
+                <p className="mb-2">조회수 {Number(video.statistics.viewCount).toLocaleString()}회</p>
+              )}
               <p className="whitespace-pre-wrap">{description}</p>
             </div>
           </div>
