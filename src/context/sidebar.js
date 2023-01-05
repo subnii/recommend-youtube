@@ -4,7 +4,8 @@ import { useParams } from "react-router-dom";
 const SidbarContext = React.createContext();
 
 export const SidebarProvider = ({ children }) => {
-  const [isShowSidebar, setIsSidebarOpen] = useState(true);
+  const isMobile = /mobi/i.test(window.navigator.userAgent);
+  const [isShowSidebar, setIsSidebarOpen] = useState(!isMobile);
   const { id } = useParams();
   const [curCategory, setCurCategory] = useState(id);
 
@@ -13,7 +14,7 @@ export const SidebarProvider = ({ children }) => {
   };
 
   return (
-    <SidbarContext.Provider value={{ isShowSidebar, toggleSidebar, curCategory, setCurCategory }}>
+    <SidbarContext.Provider value={{ isMobile, isShowSidebar, toggleSidebar, curCategory, setCurCategory }}>
       {children}
     </SidbarContext.Provider>
   );

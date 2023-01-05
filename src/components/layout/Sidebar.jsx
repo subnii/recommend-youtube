@@ -5,7 +5,7 @@ import { getCategory } from "../../api/youtubeApi";
 import { useSidebarContext } from "../../context/sidebar";
 
 function Sidebar() {
-  const { curCategory, setCurCategory } = useSidebarContext();
+  const { curCategory, setCurCategory, isMobile } = useSidebarContext();
   const navigate = useNavigate();
 
   const {
@@ -26,7 +26,13 @@ function Sidebar() {
   };
 
   return (
-    <aside className="flex-none w-64 h-full overflow-y-auto border-zinc-600 scrollbar-thin scrollbar-thumb-zinc-500 scrollbar-thumb-rounded scrollbar-track-zinc-900">
+    <aside
+      className={
+        isMobile
+          ? "absolute top-[61px] left-0 bg-zinc-900 z-10 flex-none w-64 h-full overflow-y-auto border-zinc-600 scrollbar-thin scrollbar-thumb-zinc-500 scrollbar-thumb-rounded scrollbar-track-zinc-900"
+          : "flex-none w-64 h-full overflow-y-auto border-zinc-600 scrollbar-thin scrollbar-thumb-zinc-500 scrollbar-thumb-rounded scrollbar-track-zinc-900"
+      }
+    >
       {isLoading && <p>로딩중....</p>}
       {error && <p>문제가 발생했습니다.</p>}
       {categoryList && (
