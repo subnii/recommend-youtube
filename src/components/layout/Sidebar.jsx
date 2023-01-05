@@ -1,8 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
-import { fakeCategory } from "../../api/youtubeApi";
+import { useNavigate } from "react-router-dom";
+import { getCategory } from "../../api/youtubeApi";
+import { useSidebarContext } from "../../context/sidebar";
 
 function Sidebar() {
+  const { curCategory, setCurCategory } = useSidebarContext();
+  const navigate = useNavigate();
+
   const {
     isLoading,
     error,
@@ -10,17 +15,32 @@ function Sidebar() {
   } = useQuery(
     ["categoryList"],
     () => {
-      return fakeCategory();
+      return getCategory();
     },
-    { staleTime: 1000 * 60 * 1 },
+    { refetchOnWindowFocus: false },
   );
+
+  const clickHandler = (id) => {
+    setCurCategory(id);
+    navigate(`/categoryVideos/${id}`);
+  };
 
   return (
     <aside className="flex-none w-64 h-full overflow-y-auto border-zinc-600 scrollbar-thin scrollbar-thumb-zinc-500 scrollbar-thumb-rounded scrollbar-track-zinc-900">
+      {isLoading && <p>로딩중....</p>}
+      {error && <p>문제가 발생했습니다.</p>}
       {categoryList && (
         <ul className="text-md p-3">
           {categoryList.map((category) => (
-            <li key={category.id} className="p-2">
+            <li
+              key={category.id}
+              className={
+                curCategory === category.id
+                  ? "p-2 cursor-pointer bg-zinc-700 rounded-lg hover:bg-zinc-600 hover:rounded-lg"
+                  : "p-2 cursor-pointer hover:bg-zinc-600 hover:rounded-lg"
+              }
+              onClick={clickHandler.bind(null, category.id)}
+            >
               {category.snippet.title}
             </li>
           ))}

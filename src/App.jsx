@@ -3,12 +3,24 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Sidebar from "./components/layout/Sidebar";
+import { SidebarProvider, useSidebarContext } from "./context/sidebar";
 
 const queryClient = new QueryClient();
 
-function App() {
+function Contents() {
+  const { isShowSidebar } = useSidebarContext();
+
   return (
     <>
+      {isShowSidebar && <Sidebar />}
+      <Outlet />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <SidebarProvider>
       <Header></Header>
       <div
         className="flex-1 flex"
@@ -17,11 +29,12 @@ function App() {
         }}
       >
         <QueryClientProvider client={queryClient}>
-          <Sidebar />
-          <Outlet />
+          <>
+            <Contents></Contents>
+          </>
         </QueryClientProvider>
       </div>
-    </>
+    </SidebarProvider>
   );
 }
 

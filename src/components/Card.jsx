@@ -4,19 +4,22 @@ import TimeAgo from "timeago-react";
 import koLocale from "timeago.js/lib/lang/ko";
 import { getFixCount } from "../util/number";
 import { useNavigate } from "react-router-dom";
+import { useSidebarContext } from "../context/sidebar";
 
 timeago.register("ko", koLocale);
 
 function Card({ video, type }) {
+  const { setCurCategory } = useSidebarContext();
   const { title, thumbnails, channelTitle, publishedAt } = video.snippet;
   const navigate = useNavigate();
 
   const clickHandler = () => {
-    navigate(`/detail/${video.id}`, { state: { video } });
+    setCurCategory(undefined);
+    navigate(`/detail/${video.id} `, { state: { video } });
   };
 
   return (
-    <li className={type === "list" ? "flex gap-1 mb-2" : ""} onClick={clickHandler}>
+    <li className={type === "list" ? "flex gap-1 mb-2 cursor-pointer" : "cursor-pointer"} onClick={clickHandler}>
       <img
         className={type === "list" ? "w-60 mr-2 rounded-md" : "w-full rounded-xl"}
         src={thumbnails.medium.url}
